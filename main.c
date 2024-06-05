@@ -30,11 +30,11 @@ int main() {
     //busca un elemento por su data
     int data = 5;
     //asigna el retorno de la funcion de busqueda a un puntero con el resultado y revisa si existe
-    struct Node* busca_data = nodo_buscar(head, busca_data);
+    struct Node* busca_data = nodo_buscar(head, data);
     if (busca_data != NULL)
-        printf("Elemento %d encontrado en la lista\n", busca_data);
+        printf("Elemento %d encontrado en la lista\n", data);
     else
-        printf("Elemento %d no encontrado en la lista\n", busca_data);
+        printf("Elemento %d no encontrado en la lista\n", data);
 
     // Imprime la lista hacia adelante
     imprime_lista_adelante(head); 
