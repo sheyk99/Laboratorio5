@@ -134,3 +134,14 @@ void imprime_lista_atras(struct Node* tail) {
     }
     printf("\n");
 }
+
+// Función para liberar memoria alocada
+void freelist(struct Node* head) {
+    struct Node * current = head;
+    struct Node * next;
+    while (current != NULL) {
+        next = current->next;
+        free(current);
+        current = next;
+    }
+}
