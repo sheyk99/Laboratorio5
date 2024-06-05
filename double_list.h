@@ -35,5 +35,8 @@ void imprime_lista_adelante(struct Node* head);
 // Función para recorrer la lista hacia atrás e imprimir los elementos
 void imprime_lista_atras(struct Node* tail);
 
+// Función para liberar memoria alocada
+void freelist(struct Node* head);
+
 
 #endif
