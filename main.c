@@ -48,5 +48,8 @@ int main() {
 
     imprime_lista_atras(tail); // Imprime la lista hacia atrás
 
+    //libera la memoria utilizada
+    freelist(head);
+
     return 0;
 }
